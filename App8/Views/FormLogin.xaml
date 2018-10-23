@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="App8.Views.FormLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App8.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <StackPanel Orientation="Vertical">
+            <AppBarButton Icon="Home" HorizontalAlignment="Right" Width="50" Height="50" Click="btnHome" ></AppBarButton>
+        </StackPanel>
+        <StackPanel Margin="0,100,0,0" HorizontalAlignment="Center">
+            <TextBox Width="300" x:Name="Email" Header="Email"/>
+            <TextBlock x:Name="email" Foreground="Red" Visibility="Collapsed"/>
+            <PasswordBox x:Name="Password" Header="Password"/>
+            <TextBlock x:Name="password" Foreground="Red" Visibility="Collapsed"/>
+            <Button x:Name="BtnLogin" Content="Login" Click="BtnLogin_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
